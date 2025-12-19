@@ -6,6 +6,8 @@ postgres/
 
 .env
 
+.vscode
+
 
 # Logs
 logs
