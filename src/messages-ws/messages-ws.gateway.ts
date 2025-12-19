@@ -13,7 +13,7 @@ import { JwtPayload } from '../auth/interfaces/jwt-payload.interface';
 
 @WebSocketGateway({
   cors: {
-    origin: 'http://localhost:5173',
+    origin: 'https://calm-rugelach-14fa1f.netlify.app/',
     credentials: true,
   },
 })
