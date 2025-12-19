@@ -27,7 +27,7 @@ export class MessagesWsGateway implements OnGatewayConnection, OnGatewayDisconne
   ) { }
 
   async handleConnection(client: Socket) {
-    const token = client.handshake.headers.authentication as string;
+    const token = client.handshake.auth.token;
     let payload: JwtPayload;
 
     try {
