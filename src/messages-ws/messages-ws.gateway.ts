@@ -13,10 +13,11 @@ import { JwtPayload } from '../auth/interfaces/jwt-payload.interface';
 
 @WebSocketGateway({
   cors: {
-    origin: 'https://calm-rugelach-14fa1f.netlify.app/',
+    origin: 'https://calm-rugelach-14fa1f.netlify.app',
     credentials: true,
   },
 })
+
 export class MessagesWsGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
   @WebSocketServer() wss: Server;
